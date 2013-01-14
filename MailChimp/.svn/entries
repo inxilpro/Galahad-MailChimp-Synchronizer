@@ -1,0 +1,40 @@
+8
+
+dir
+25
+https://reportsinc.svn.beanstalkapp.com/galahad/projects/galahad-mc/trunk/MailChimp
+https://reportsinc.svn.beanstalkapp.com/galahad
+
+
+
+2009-03-25T18:46:54.315304Z
+25
+inxilpro
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+baf7ca7a-39cc-49aa-ba4b-7a8a225cb91b
+
+MCAPI.class.php
+file
+26
+
+
+
+2009-03-25T20:14:20.000000Z
+22fe66ca708ef37357caa4df8194aa1e
+2009-03-25T20:32:23.265810Z
+26
+inxilpro
+
