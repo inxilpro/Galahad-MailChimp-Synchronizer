@@ -170,12 +170,12 @@ abstract class Galahad_MailChimp_Synchronizer
 		do {
 			$batch = $this->_mailChimp->listMembers($listId, 'subscribed', null, $start, $this->_batchSize);
 			$start++;
-			foreach ($batch as $row) {
+			foreach ($batch['data'] as $row) {
 				if (!$this->userExists($row['email'], $listId)) {
 					$unsubscribe[] = $row['email'];
 				}
 			}
-		} while (count($batch) == $this->_batchSize);
+		} while (count($batch['data']) == $this->_batchSize);
 		
 		$unsubscribe = array_chunk($unsubscribe, $this->_batchSize);
 		foreach ($unsubscribe as $i => $batch) {
